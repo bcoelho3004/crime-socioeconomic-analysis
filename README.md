@@ -50,27 +50,31 @@ Portugal, Spain, France, Germany, Italy, Netherlands
 - Streamlit (interactive dashboard)
 
 ## Project Structure
+
+```
 crime-socioeconomic-analysis/
-|
+│
 ├── data/
-│ ├── raw/
-│ └── processed/
-|
+│   ├── raw/
+│   └── processed/
+│
 ├── notebooks/
-│ ├── 01_data_collection.ipynb
-│ ├── 02_eda.ipynb
-│ └── 03_regression_model.ipynb
-|
+│   ├── 01_data_collection.ipynb
+│   ├── 02_eda.ipynb
+│   └── 03_regression_model.ipynb
+│
 ├── src/
-│ ├── data_processing.py
-│ └── modeling.py
-|
+│   ├── data_processing.py
+│   └── modeling.py
+│
 ├── figures/
+│
 ├── dashboard/
-│ └── app.py
-|
+│   └── app.py
+│
 ├── README.md
 └── requirements.txt
+```
 
 
 ## Current Status
