@@ -51,30 +51,16 @@ Portugal, Spain, France, Germany, Italy, Netherlands
 
 ## Project Structure
 
-```
-crime-socioeconomic-analysis/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── 01_data_collection.ipynb
-│   ├── 02_eda.ipynb
-│   └── 03_regression_model.ipynb
-│
-├── src/
-│   ├── data_processing.py
-│   └── modeling.py
-│
-├── figures/
-│
-├── dashboard/
-│   └── app.py
-│
-├── README.md
-└── requirements.txt
-```
+The repository is organized as follows:
+
+- `data/raw/` — Original datasets from Eurostat and World Bank
+- `data/processed/` — Cleaned and merged datasets ready for analysis
+- `notebooks/` — Jupyter notebooks for data collection, EDA, and modeling
+- `src/` — Reusable Python functions for data processing and modeling
+- `figures/` — Saved plots and visualizations
+- `dashboard/` — Streamlit dashboard application
+- `README.md` — Project documentation
+- `requirements.txt` — Python dependencies
 
 
 ## Current Status
