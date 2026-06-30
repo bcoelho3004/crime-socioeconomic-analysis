@@ -63,12 +63,52 @@ The repository is organized as follows:
 - `requirements.txt` — Python dependencies
 
 
+## Key Findings
+
+### Crime Rates by Country (2015-2022)
+
+| Country | Average Homicide Rate (per 100,000) |
+|---|---|
+| France | 1.16 |
+| Germany | 0.91 |
+| Portugal | 0.76 |
+| Netherlands | 0.68 |
+| Spain | 0.65 |
+| Italy | 0.59 |
+
+France consistently shows the highest intentional homicide rate among the six countries, while Italy and Spain report the lowest averages.
+
+### Pooled Regression Results
+
+A multiple linear regression of crime rate on unemployment and GDP per capita across all countries yields an R-squared of 0.071, indicating that socioeconomic variables alone explain only 7% of the variation in crime rates at the aggregate level. Neither unemployment (p = 0.220) nor GDP per capita (p = 0.968) reached statistical significance.
+
+### Within-Country Correlations
+
+The relationship between unemployment and crime varies substantially by country:
+
+| Country | Correlation (Crime vs Unemployment) |
+|---|---|
+| Italy | +0.82 |
+| Portugal | +0.70 |
+| France | +0.49 |
+| Germany | +0.36 |
+| Spain | -0.29 |
+| Netherlands | -0.63 |
+
+In Southern European countries (Italy, Portugal), declining unemployment is associated with declining crime rates. In the Netherlands and Spain, the relationship is reversed, suggesting that institutional and cultural factors mediate the link between economic conditions and crime.
+
+### Interpretation
+
+The weak pooled model combined with strong but opposing within-country correlations reveals a Simpson's Paradox: aggregating diverse countries masks heterogeneous national dynamics. This finding underscores the importance of country-level analysis in computational social science and policy research. Future work should incorporate institutional quality, social spending, and inequality measures to better explain cross-national variation.
+
 ## Current Status
 
-- [ ] Data collection and cleaning
-- [ ] Exploratory data analysis
-- [ ] Regression model
-- [ ] Dashboard deployment
+- [x] Data collection and cleaning
+- [x] Exploratory data analysis
+- [x] Regression model
+- [x] Within-country correlation analysis
+- [ ] Panel data fixed-effects model
+- [ ] Interactive dashboard deployment
 
 ## Limitations
 
