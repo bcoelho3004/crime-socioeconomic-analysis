@@ -1,0 +1,28 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:             crime_rate   R-squared:                       0.071
+Model:                            OLS   Adj. R-squared:                  0.026
+Method:                 Least Squares   F-statistic:                     1.573
+Date:                Tue, 30 Jun 2026   Prob (F-statistic):              0.220
+Time:                        00:10:52   Log-Likelihood:                 4.8122
+No. Observations:                  44   AIC:                            -3.624
+Df Residuals:                      41   BIC:                             1.728
+Df Model:                           2                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              0.8989      0.255      3.530      0.001       0.385       1.413
+unemployment      -0.0128      0.010     -1.247      0.220      -0.034       0.008
+gdp_per_capita  1.873e-07   4.68e-06      0.040      0.968   -9.27e-06    9.65e-06
+==============================================================================
+Omnibus:                       16.280   Durbin-Watson:                   0.712
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               19.448
+Skew:                           1.286   Prob(JB):                     5.98e-05
+Kurtosis:                       4.997   Cond. No.                     3.02e+05
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 3.02e+05. This might indicate that there are
+strong multicollinearity or other numerical problems.
